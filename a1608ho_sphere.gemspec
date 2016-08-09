@@ -7,12 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "a1608ho_sphere"
   spec.version       = A1608hoSphere::VERSION
   spec.authors       = ["Hiroaki Ohashi"]
-  spec.email         = ["ohashi.hiroaki@gmail.com"]
-
-  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
+  spec.email         = 'ohashi.hiroaki@gmail.com'
+  spec.summary       = "Calculation of sphere"
+  spec.description   = "Calculate volume of sphere from radius input on console"
+  spec.homepage      = 'http://rubygems.org/gems/hola_hohashi'
   spec.license       = "MIT"
-
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
